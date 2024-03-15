@@ -1,0 +1,14 @@
+/* Base */
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/vars';
+@import './base/typography';
+
+
+
+/* Blocks */
+@import './blocks/*.scss';
+
+/* No styles code below. Only in modules */
+/* Не пишите CSS код ниже. Только в подключаемых файлах */
