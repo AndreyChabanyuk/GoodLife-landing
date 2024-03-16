@@ -1,0 +1,14 @@
+.header-search-wrapper{
+    position: absolute;
+    top:remy(101);
+    left:0;
+    right:0;
+
+    height: 100px;
+    background-color:rgb(254, 254, 254);
+    padding-block:remy(30);
+    box-shadow: 0 1px 5px rgba(0,0,0, .2);  
+    transition: all 0.3s ease-in-out;
+   
+}
+

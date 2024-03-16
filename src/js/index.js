@@ -1,5 +1,18 @@
-import mobileNav from './modules/mobile-nav.js';
-mobileNav();
+document.addEventListener('DOMContentLoaded', function () {
+	const headerSearchOpen = document.querySelector('#search-open')
+	const headerSearchWrapper = document.querySelector('#header-search-wrapper')
 
-// import isAvifWebp from 'avif-webp-checker';
-// isAvifWebp({ mode: 'webp' });
+	headerSearchOpen.addEventListener('click', () => {
+    headerSearchWrapper.classList.toggle('none')
+	})
+})
+
+
+
+// Анимация появления search
+
+headerSearchOpen('aminationend',AnimationHandler,false)
+
+function AnimationHandler(){
+
+}

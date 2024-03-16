@@ -1,0 +1,38 @@
+.logo{
+    font-size: remy(40);
+    margin-right:auto;
+    margin-bottom: remy(10);
+    font-weight: 800;
+    color: white;
+    & span {
+        color:var(--subAc)
+    }
+}
+.header-container{
+        width:100%;
+        max-width: remy(1390);
+        margin: 0 auto;
+        padding-inline: remy(15)
+}
+
+.header-nav{
+    height: remy(101);
+    background-color: var(--ac);
+    z-index: 3;
+    &__btn{
+        column-gap:remy(36);
+        margin-left: remy(76);
+    }
+
+    
+
+}
+
+
+.header-menu{
+    display:flex;
+    gap:76px;
+}
+
+
+

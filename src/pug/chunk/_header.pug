@@ -1,6 +1,35 @@
-h1.h1 Йпв233
-a(href="#").btn Button
-a(href="#").btn-outline Button
+header.header
+    //======= navigation =======
+    .header-nav.d-flex
+        .header-container.d-flex
+            a(href="#!").logo Good#[span lyfe]
+            //======= nav =======
+            nav.header-menu.d-flex
+                a(href="#") Classess
+                a(href="#") Timetable
+                a(href="#") Clubs
+                a(href="#") Nutrition
+                a(href="#") Free Trial
+              
+            .header-nav__btn.d-flex
+                button.search-open.d-flex#search-open 
+                    span Search 
+                    svg.svg-search
+                        use(href="./img/sprite/solid.svg#magnifying-glass")
+                button.btn-outline.btn-outline--slim Login
+    //=================header-search
+    .header-search-wrapper.none#header-search-wrapper
+        .header-container
+            form.search-form
+                .form-item
+                    input(type="text" placeholder="search...")
+                    button(type="submit").search-btn
+                        svg.svg-search 
+                            use(href="./img/sprite/solid.svg#magnifying-glass")
+                    button(type="reset").reset-btn 
+                        svg.svg-xmark
+                            use(href="./img/sprite/solid.svg#xmark")
+                    
 
-input.btn(type="submit" value='Button') 
-input.btn-outline(type="submit" value='Button') 
+    //======= slider =======
+    .header-slider

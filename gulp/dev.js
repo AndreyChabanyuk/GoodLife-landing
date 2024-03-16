@@ -17,6 +17,7 @@ const svgsprite = require('gulp-svg-sprite');
 const replace = require('gulp-replace');
 const open = require('gulp-open');
 const gulpPug = require('gulp-pug');
+const autoprefixer = require('gulp-autoprefixer')
 const browserSync = require('browser-sync').create()
 
 
@@ -76,6 +77,7 @@ gulp.task('pug:dev', function () {
 gulp.task('sass:dev', function () {
 	return gulp
 		.src('./src/scss/*.scss')
+
 		.pipe(changed('./build/css/'))
 		.pipe(plumber(plumberNotify('SCSS')))
 		.pipe(sourceMaps.init())
@@ -88,6 +90,9 @@ gulp.task('sass:dev', function () {
 			)
 		)
 		.pipe(sourceMaps.write())
+		.pipe(autoprefixer({
+			cascade:false
+		}))
 		.pipe(gulp.dest('./build/css/'));
 });
 
@@ -167,13 +172,21 @@ gulp.task('files:dev', function () {
 });
 
 gulp.task('js:dev', function () {
-	return gulp
-		.src('./src/js/*.js')
-		.pipe(changed('./build/js/'))
-		.pipe(plumber(plumberNotify('JS')))
-		// .pipe(babel())
-		.pipe(webpack(require('./../webpack.config.js')))
-		.pipe(gulp.dest('./build/js/'));
+	return (
+		gulp
+			.src('./src/js/*.js')
+			.pipe(changed('./build/js/'))
+			.pipe(plumber(plumberNotify('JS')))
+			.pipe(
+				replace(
+					/(?<=src=|href=|srcset=)(['"])(\.(\.)?\/)*(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
+					'$1./$4$5$7$1'
+				)
+			)
+			// .pipe(babel())
+			.pipe(webpack(require('./../webpack.config.js')))
+			.pipe(gulp.dest('./build/js/'))
+	)
 });
 
 const serverOptions = {

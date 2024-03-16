@@ -8,10 +8,46 @@
     <title>Document</title>
   </head>
   <body> 
-    <h1 class="h1">Йпв233</h1><a class="btn" href="#">Button</a><a class="btn-outline" href="#">Button</a>
-    <input class="btn" type="submit" value="Button">
-    <input class="btn-outline" type="submit" value="Button">
-    <h1>Га</h1>
-    <footer>у2</footer>
+    <header class="header">
+      <!--======= navigation =======-->
+      <div class="header-nav d-flex">
+        <div class="header-container d-flex"><a class="logo" href="#!">Good<span>lyfe</span></a>
+          <!--======= nav =======-->
+          <nav class="header-menu d-flex"><a href="#">Classess</a><a href="#">Timetable</a><a href="#">Clubs</a><a href="#">Nutrition</a><a href="#">Free Trial</a></nav>
+          <div class="header-nav__btn d-flex">
+            <button class="search-open d-flex" id="search-open"> <span>Search </span>
+              <svg class="svg-search">
+                <use href="./img/sprite/solid.svg#magnifying-glass"></use>
+              </svg>
+            </button>
+            <button class="btn-outline btn-outline--slim">Login</button>
+          </div>
+        </div>
+      </div>
+      <!--=================header-search-->
+      <div class="header-search-wrapper none" id="header-search-wrapper">
+        <div class="header-container">
+          <form class="search-form">
+            <div class="form-item">
+              <input type="text" placeholder="search...">
+              <button class="search-btn" type="submit">
+                <svg class="svg-search"> 
+                  <use href="./img/sprite/solid.svg#magnifying-glass"></use>
+                </svg>
+              </button>
+              <button class="reset-btn" type="reset"> 
+                <svg class="svg-xmark">
+                  <use href="./img/sprite/solid.svg#xmark"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--======= slider =======-->
+      <div class="header-slider"></div>
+    </header>
+    <footer> </footer>
   </body>
+  <script src="./js/index.bundle.js"></script>
 </html>

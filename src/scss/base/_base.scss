@@ -12,11 +12,23 @@ html {
 }
 
 body {
-	/* background-color: var(--page-bg); */
+	--ac:#E43071;
+	--subAc:#FFC1D8;
+	--outBr:#FFDAE7;
+	--darkAccent:rgb(190, 40, 94);
 	color: var(--text-color);
 	font-family: var(--font-main);
 	text-wrap: balance;
 	height: 100%;
+	
+
+}
+
+body.green-theme{
+	--ac:#26D68A;
+	--subAc:#9BE8C7;
+	--outBr:#a5e4c9;
+	--darkAccent:#0b7949;
 }
 
 img {
@@ -40,7 +52,24 @@ pre.code {
 	border-radius: 4px;
 }
 
+button,a{
+	color:inherit;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+.d-flex{
+	display:flex;
+	align-items: center
+}
+
 
 @function remy($pxsize){
 	@return calc(($pxsize)/16)+rem;
+}
+
+.none{
+margin-top:-100px;
+visibility: hidden;
+
 }
