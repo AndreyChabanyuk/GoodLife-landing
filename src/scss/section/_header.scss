@@ -7,6 +7,16 @@
     & span {
         color:var(--subAc)
     }
+
+    @media (max-width:1105px){
+        font-size: remy(28);
+    }
+
+    @media (max-width:1000px){
+        font-size: remy(20);
+    }
+
+
 }
 .header-container{
         width:100%;
@@ -15,24 +25,36 @@
         padding-inline: remy(15)
 }
 
+.header{
+    position:relative;
+}
+
 .header-nav{
     height: remy(101);
     background-color: var(--ac);
-    z-index: 3;
+
     &__btn{
         column-gap:remy(36);
         margin-left: remy(76);
+        
+        @media (max-width:remy(1250)){
+            margin-left:remy(40)
+        }
+   
+    }
+
+    @media (max-width:remy(1050)){
+        height: remy(65);
     }
 
     
+    @media (max-width:remy(768)){
+        height: remy(45);
+    }
 
 }
 
 
-.header-menu{
-    display:flex;
-    gap:76px;
-}
 
 
 

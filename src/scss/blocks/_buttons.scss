@@ -40,6 +40,9 @@
         min-width: remy(166);
 		font-weight: 400;
 	
+		@media (max-width:1050px){
+			display:none;
+		}
 }
 
 .btn-outline:hover{
@@ -69,6 +72,12 @@
 	column-gap:remy(6);
 	align-items: center;
 	color:white;
+
+	& span{
+		@media (max-width:1050px){
+			display:none;
+		}
+	}
 }
 
 

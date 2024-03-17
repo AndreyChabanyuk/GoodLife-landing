@@ -28,7 +28,9 @@
         top:50%;
         z-index: 2;
         transform:translateY(-50%)
-     }
+    }
+
+     
 
      .search-btn{
        
@@ -36,14 +38,24 @@
             margin-left:5px;
             width: remy(35);
             height:remy(35);
-            fill:var(--ac)
+            fill:var(--ac);
+        
+            @media (max-width:1050px){
+                width: remy(20);
+                height:remy(20);
+                margin-left:10px;
+            }
         }
      }
      .reset-btn{
         right:0;
      }
      input{
-        padding-inline:remy(50)
-     }
+        padding-inline:remy(50);
+     
+        @media (max-width:1050px){
+                padding-inline: remy(35);
+            }
+    }
 }
 

@@ -1,23 +1,5 @@
 header.header
     //======= navigation =======
-    .header-nav.d-flex
-        .header-container.d-flex
-            a(href="#!").logo Good#[span lyfe]
-            //======= nav =======
-            nav.header-menu.d-flex
-                a(href="#") Classess
-                a(href="#") Timetable
-                a(href="#") Clubs
-                a(href="#") Nutrition
-                a(href="#") Free Trial
-              
-            .header-nav__btn.d-flex
-                button.search-open.d-flex#search-open 
-                    span Search 
-                    svg.svg-search
-                        use(href="./img/sprite/solid.svg#magnifying-glass")
-                button.btn-outline.btn-outline--slim Login
-    //=================header-search
     .header-search-wrapper.none#header-search-wrapper
         .header-container
             form.search-form
@@ -29,6 +11,31 @@ header.header
                     button(type="reset").reset-btn 
                         svg.svg-xmark
                             use(href="./img/sprite/solid.svg#xmark")
+
+    .header-nav.d-flex
+        .header-container.d-flex
+            a(href="#!").logo Good#[span lyfe]
+            //======= nav =======
+            nav.header-menu.d-flex#head-menu
+                a(href="#") Classess
+                a(href="#") Timetable
+                a(href="#") Clubs
+                a(href="#") Nutrition
+                a(href="#") Free Trial
+              
+            .header-nav__btn.d-flex
+                button.search-open.d-flex#search-open 
+                    span Search 
+                    svg.svg-search
+                        use(href="./img/sprite/solid.svg#magnifying-glass")
+
+                button.btn-outline.btn-outline--slim Login
+                button.menu-toggle#menu-toggle 
+                    span
+
+
+    //=================header-search
+    
                     
 
     //======= slider =======

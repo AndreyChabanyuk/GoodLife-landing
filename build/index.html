@@ -10,21 +10,6 @@
   <body> 
     <header class="header">
       <!--======= navigation =======-->
-      <div class="header-nav d-flex">
-        <div class="header-container d-flex"><a class="logo" href="#!">Good<span>lyfe</span></a>
-          <!--======= nav =======-->
-          <nav class="header-menu d-flex"><a href="#">Classess</a><a href="#">Timetable</a><a href="#">Clubs</a><a href="#">Nutrition</a><a href="#">Free Trial</a></nav>
-          <div class="header-nav__btn d-flex">
-            <button class="search-open d-flex" id="search-open"> <span>Search </span>
-              <svg class="svg-search">
-                <use href="./img/sprite/solid.svg#magnifying-glass"></use>
-              </svg>
-            </button>
-            <button class="btn-outline btn-outline--slim">Login</button>
-          </div>
-        </div>
-      </div>
-      <!--=================header-search-->
       <div class="header-search-wrapper none" id="header-search-wrapper">
         <div class="header-container">
           <form class="search-form">
@@ -44,6 +29,22 @@
           </form>
         </div>
       </div>
+      <div class="header-nav d-flex">
+        <div class="header-container d-flex"><a class="logo" href="#!">Good<span>lyfe</span></a>
+          <!--======= nav =======-->
+          <nav class="header-menu d-flex" id="head-menu"><a href="#">Classess</a><a href="#">Timetable</a><a href="#">Clubs</a><a href="#">Nutrition</a><a href="#">Free Trial</a></nav>
+          <div class="header-nav__btn d-flex">
+            <button class="search-open d-flex" id="search-open"> <span>Search </span>
+              <svg class="svg-search">
+                <use href="./img/sprite/solid.svg#magnifying-glass"></use>
+              </svg>
+            </button>
+            <button class="btn-outline btn-outline--slim">Login</button>
+            <button class="menu-toggle" id="menu-toggle"> <span></span></button>
+          </div>
+        </div>
+      </div>
+      <!--=================header-search-->
       <!--======= slider =======-->
       <div class="header-slider"></div>
     </header>

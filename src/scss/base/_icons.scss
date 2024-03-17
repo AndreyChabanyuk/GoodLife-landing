@@ -2,7 +2,13 @@
     width:remy(20);
     height: remy(20);
     fill:white;
-    transform:rotate(90deg)
+    transform:rotate(90deg);
+   
+    @media (max-width:768px){
+        width: remy(15);
+    }
+
+    
 }
 
 
@@ -11,3 +17,11 @@
     height: remy(40);
     fill:black;
 }
+
+.svg-xmark{
+    @media(max-width:1050px){
+        width: remy(25);
+        height: remy(25);
+    }
+}
+
