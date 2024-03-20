@@ -2,7 +2,7 @@
     position: absolute;
     top:remy(101);
     left:0;
-    z-index: -2;
+    z-index: 4;
     right:0;
     height: 100px;
     background-color:rgb(254, 254, 254);
@@ -16,6 +16,10 @@
 
     @media (max-width:768px){
        top:remy(21)
+    }
+
+    @media (max-width:600px){
+      height: 70px;
     }
 
 }

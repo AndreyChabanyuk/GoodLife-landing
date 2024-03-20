@@ -1,0 +1,20 @@
+:root {
+  --container-width: 1200px;
+  --container-padding: 15px;
+  --font-main: "Poppins", sans-serif;
+  --font-second:"Manrope",sans-serif;
+  --font-three: "Times New Roman";
+  --font-titles: var(--font-accent);
+  --page-bg: #1C274A;
+  --text-color: #000;
+  --accent: #ac182c;
+  --link-color: #2578c8;
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+}
+
+/* .dark {
+    --page-bg: #1C274A;
+    --text-color: #fff;
+} */

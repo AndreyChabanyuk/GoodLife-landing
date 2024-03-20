@@ -9,16 +9,27 @@
 	font-size: 1rem;
 	flex-shrink: 0;
 	font-weight: 600;
-	letter-spacing: remy(0.75);
 	color:white;
     white-space: nowrap;
 	transition:0.3s;
 	text-align: center;
+
+	@media (max-width:remy(1000)){
+		height: remy(50);
+		line-height: remy(50);
+	}
+
+	@media (max-width:remy(675)){
+		height: remy(45);
+		line-height: remy(45);
+		min-width: remy(180);
+		font-size: 0.8rem;
+	}
 }
 
 .btn:hover{
 
-	background-color: var(--darkenAccent)
+	background-color: var(--darkAccent)
 }
 
 .btn:focus{
@@ -32,6 +43,11 @@
 	background-color: white;
 	color:var(--ac);
 	line-height: remy(64);
+
+	@media (max-width:remy(1000)){
+		height: remy(60);
+		line-height: remy(56);
+	}
 }
 
 .btn-outline--slim{	
@@ -47,7 +63,8 @@
 
 .btn-outline:hover{
 	border:remy(2) solid rgb(190, 40, 94);
-	color: rgb(190, 40, 94)
+	color: rgb(190, 40, 94);
+
 }
 
 .btn-outline:focus{

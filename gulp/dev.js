@@ -184,7 +184,6 @@ gulp.task('js:dev', function () {
 				)
 			)
 			// .pipe(babel())
-			.pipe(webpack(require('./../webpack.config.js')))
 			.pipe(gulp.dest('./build/js/'))
 	)
 });
@@ -201,12 +200,19 @@ gulp.task('server:dev', function () {
 	.pipe(server(serverOptions))
 });
 
+
+gulp.task('libs:dev', function () {
+	return gulp.src('./src/libs/**/*.*').pipe(gulp.dest('./build/libs/'))
+	
+})
+
 gulp.task('watch:dev', function () {
 	gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass:dev'));
 	gulp.watch('./src/pug/**/*.pug', gulp.parallel('pug:dev'))
 	gulp.watch('./src/img/**/*', gulp.parallel('images:dev'));
 	gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));
 	gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'));
+	gulp.watch('./src/libs/**/*.*', gulp.parallel('libs:dev'))
 	gulp.watch(
 		'./src/img/svgicons/*',
 		gulp.series('svgStack:dev', 'svgSymbol:dev')

@@ -1,3 +1,7 @@
+mixin header-slide(imgName)
+    .swiper-slide
+        .header-slider__item 
+            img(src="../../../img/main/'+ imgName +'.jpeg", alt="img")
 header.header
     //======= navigation =======
     .header-search-wrapper.none#header-search-wrapper
@@ -14,7 +18,7 @@ header.header
 
     .header-nav.d-flex
         .header-container.d-flex
-            a(href="#!").logo Good#[span lyfe]
+            a(href="#!").logo Good#[span.accent-span lyfe]
             //======= nav =======
             nav.header-menu.d-flex#head-menu
                 a(href="#") Classess
@@ -39,4 +43,27 @@ header.header
                     
 
     //======= slider =======
-    .header-slider
+    .header-content
+        .header-content__title 
+            h1.h1 Welcome to #[br] Good#[span.accent-span lyfe] Gyms
+            a.btn(href="#!") See the benefits
+        .swiper.header-slider
+            .swiper-wrapper
+                //====== single slide ======
+                .swiper-slide
+                    .header-slider__item 
+                        img(src="../../../img/main/header-bg.jpeg", alt="img")
+                //====== single slide ======            
+                .swiper-slide
+                    .header-slider__item 
+                        img(src="../../../img/main/header-bg2.jpg", alt="img")
+                //====== single slide ======    
+                .swiper-slide
+                    .header-slider__item 
+                        img(src="../../../img/main/header-bg3.jpg", alt="img")
+                //====== single slide ======    
+                .swiper-slide
+                    .header-slider__item 
+                        img(src="../../../img/main/header-bg4.jpg", alt="img")
+
+            .swiper-pagination

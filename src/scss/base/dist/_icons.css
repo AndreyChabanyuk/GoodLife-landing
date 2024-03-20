@@ -1,0 +1,29 @@
+.svg-search {
+  width: remy(20);
+  height: remy(20);
+  fill: white;
+  transform: rotate(90deg);
+}
+@media (max-width: 768px) {
+  .svg-search {
+    width: remy(15);
+  }
+}
+
+.svg-xmark {
+  width: remy(40);
+  height: remy(40);
+  fill: #747373;
+}
+
+@media (max-width: 1050px) {
+  .svg-xmark {
+    width: remy(25);
+    height: remy(25);
+  }
+}
+@media (max-width: 600px) {
+  .svg-xmark {
+    height: remy(18);
+  }
+}

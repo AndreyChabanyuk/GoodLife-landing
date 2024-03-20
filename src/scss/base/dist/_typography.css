@@ -1,0 +1,36 @@
+.h1, .h2, .h3, .h4 {
+  font-size: remy(65);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.h2 {
+  font-size: remy(60);
+}
+
+.h3, .h5 {
+  font-size: remy(48);
+  font-weight: 600;
+}
+
+.h4 {
+  font-size: remy(40);
+}
+
+.h5 {
+  font-size: remy(38);
+}
+
+@media (max-width: remy(1000)) {
+  .h1 {
+    font-size: remy(45);
+  }
+}
+@media (max-width: remy(675)) {
+  .h1 {
+    font-size: remy(32);
+  }
+}
+.accent-span {
+  color: var(--subAc) !important;
+}

@@ -1,0 +1,27 @@
+.header-search-wrapper {
+  position: absolute;
+  top: remy(101);
+  left: 0;
+  z-index: 4;
+  right: 0;
+  height: 100px;
+  background-color: #fefefe;
+  padding-block: remy(30);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1050px) {
+  .header-search-wrapper {
+    top: remy(61);
+  }
+}
+@media (max-width: 768px) {
+  .header-search-wrapper {
+    top: remy(21);
+  }
+}
+@media (max-width: 600px) {
+  .header-search-wrapper {
+    height: 70px;
+  }
+}

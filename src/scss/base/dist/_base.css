@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Times New Roman";
+  src: url("./../../fonts/TimesNewRomanMTStd-Bold.woff") format("woff"), url("./../../fonts/TimesNewRomanMTStd-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+  /* background-color: rgb(39, 39, 39); */
+}
+
+body {
+  --ac:#E43071;
+  --subAc:#FFC1D8;
+  --outBr:#FFDAE7;
+  --darkAccent:rgb(190, 40, 94);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  text-wrap: balance;
+  height: 100%;
+}
+
+body.green-theme {
+  --ac:#26D68A;
+  --subAc:#9BE8C7;
+  --outBr:#a5e4c9;
+  --darkAccent:#0b7949;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
+
+a {
+  color: var(--link-color);
+}
+
+code {
+  background-color: #e9f1f6;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+pre.code {
+  overflow-x: auto;
+  background-color: #e9f1f6;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+button, a {
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.none {
+  margin-top: -100px;
+  visibility: hidden;
+}
+
+.lock {
+  overflow: hidden;
+}

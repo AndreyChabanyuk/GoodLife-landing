@@ -1,0 +1,37 @@
+.header-menu {
+  flex-shrink: 0;
+  display: flex;
+  gap: remy(76);
+}
+.header-menu a {
+  padding: remy(3);
+  color: white;
+  transition: 0.3s;
+}
+.header-menu a:hover {
+  opacity: 0.7;
+}
+@media (max-width: remy(1250)) {
+  .header-menu {
+    gap: remy(50);
+  }
+}
+@media (max-width: 1050px) {
+  .header-menu {
+    transform: translateX(120%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--subAc);
+    z-index: 10;
+    flex-direction: column;
+    padding-block: remy(40);
+    gap: remy(35);
+    transition: all 0.3s ease-in;
+  }
+}
+.header-menu.active {
+  transform: translateX(0);
+}

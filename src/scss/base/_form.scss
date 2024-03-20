@@ -7,10 +7,21 @@
         font-size: 1rem;
         border:remy(1) solid $sec3;
         border-radius: remy(5);
+        @media (max-width:600px){
+            height: remy(30);
+            
+        }
         &::placeholder{
             font-size: inherit;
             color:black;
-            opacity:0.4
+            opacity:0.4;
+
+            
+            @media(max-width:600px){
+                font-size: 0.7rem;
+              
+            }
+       
         }
 
     }
@@ -25,9 +36,12 @@
 
      .search-btn, .reset-btn{
         position:absolute;
+        width:remy(35);
+        height: remy(35);
         top:50%;
         z-index: 2;
-        transform:translateY(-50%)
+        transform:translateY(-50%);
+        &>*{vertical-align: middle;}
     }
 
      
@@ -43,6 +57,11 @@
             @media (max-width:1050px){
                 width: remy(20);
                 height:remy(20);
+                margin-left:10px;
+            }
+            @media (max-width:600px){
+                width: remy(15);
+                height:remy(15);
                 margin-left:10px;
             }
         }

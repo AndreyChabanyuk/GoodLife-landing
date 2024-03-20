@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet">
     <title>Document</title>
   </head>
   <body> 
@@ -30,7 +32,7 @@
         </div>
       </div>
       <div class="header-nav d-flex">
-        <div class="header-container d-flex"><a class="logo" href="#!">Good<span>lyfe</span></a>
+        <div class="header-container d-flex"><a class="logo" href="#!">Good<span class="accent-span">lyfe</span></a>
           <!--======= nav =======-->
           <nav class="header-menu d-flex" id="head-menu"><a href="#">Classess</a><a href="#">Timetable</a><a href="#">Clubs</a><a href="#">Nutrition</a><a href="#">Free Trial</a></nav>
           <div class="header-nav__btn d-flex">
@@ -46,9 +48,35 @@
       </div>
       <!--=================header-search-->
       <!--======= slider =======-->
-      <div class="header-slider"></div>
+      <div class="header-content">
+        <div class="header-content__title"> 
+          <h1 class="h1">Welcome to <br> Good<span class="accent-span">lyfe</span> Gyms</h1><a class="btn" href="#!">See the benefits</a>
+        </div>
+        <div class="swiper header-slider">
+          <div class="swiper-wrapper">
+            <!--====== single slide ======-->
+            <div class="swiper-slide">
+              <div class="header-slider__item"> <img src="../../../img/main/header-bg.jpeg" alt="img"></div>
+            </div>
+            <!--====== single slide ======            -->
+            <div class="swiper-slide">
+              <div class="header-slider__item"> <img src="../../../img/main/header-bg2.jpg" alt="img"></div>
+            </div>
+            <!--====== single slide ======    -->
+            <div class="swiper-slide">
+              <div class="header-slider__item"> <img src="../../../img/main/header-bg3.jpg" alt="img"></div>
+            </div>
+            <!--====== single slide ======    -->
+            <div class="swiper-slide">
+              <div class="header-slider__item"> <img src="../../../img/main/header-bg4.jpg" alt="img"></div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </header>
     <footer> </footer>
   </body>
-  <script src="./js/index.bundle.js"></script>
+  <script src="./libs/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
 </html>
