@@ -4,20 +4,125 @@
     &-content{
         display:flex;
         justify-content: space-between;
-        column-gap: remy(30);
+        column-gap: remy(100);
+        @media (max-width:930px){
+            column-gap: remy(60);
+        }
+        
+        @media (max-width:700px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__img{
         flex-shrink: 0;
+        width:remy(440);
+        height: remy(500);
+        // border:2px solid red;
+        position: relative;
+        &-bottom{
+            position:absolute;
+            right:0;
+            bottom:0;
+            z-index: 2;
+        }
+        @media (max-width:930px){
+
+            width:remy(320);
+           height: remy(360);
+            &-top{
+            width:250px;
+           
+            }
+            &-bottom{
+                width:170px;
+                
+            }
+       
+        }
+
+        @media (max-width:770px){
+
+            width:remy(272);
+           height: remy(310);
+            &-top{
+            width:190px;
+            
+            }
+            &-bottom{
+            width:146px;
+                
+            }
+       
+        }
+        @media (max-width:700px){
+            
+            width:remy(320);
+           height: remy(370);
+            &-top{
+            width:250px;
+            
+            }
+            &-bottom{
+            width:170px;
+                
+            }
+       
+        }
+
+        @media (max-width:450px){
+            
+            width:remy(270);
+           height: remy(300);
+            &-top{
+            width:176px;
+            
+            }
+            &-bottom{
+            width:140px;
+                
+            }
+       
+        }
+
+
+       
+        
     }
 
     &__descrip{
+        padding-top:remy(103);
         flex-grow:1;
         max-width:remy(540);
+        @media (max-width:930px){
+            padding-top: remy(60);
+        }
+        @media(max-width:770px){
+            padding-top: remy(120);
+        }
+
+
+    
+        @media (max-width:700px){
+            margin-top: 30px;
+            padding-top: remy(60);
+            text-align: center;
+            
+        }
+
 
         &__h2{
            max-width: remy(414);
+           
         }
+
+        @media (max-width:370px){
+            text-align: left;
+        }
+
+        
     }
     .h4{margin-bottom: remy(11);}
 }
@@ -32,6 +137,10 @@
 
     @media (max-width:675px){
         line-height: remy(32);
+        
+    }
+
+    @media(max-width:450px){
         margin-bottom: remy(52);
     }
 }

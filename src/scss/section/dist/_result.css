@@ -4,17 +4,109 @@
 .result-content {
   display: flex;
   justify-content: space-between;
-  column-gap: remy(30);
+  column-gap: remy(100);
+}
+@media (max-width: 930px) {
+  .result-content {
+    column-gap: remy(60);
+  }
+}
+@media (max-width: 700px) {
+  .result-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .result__img {
   flex-shrink: 0;
+  width: remy(440);
+  height: remy(500);
+  position: relative;
+}
+.result__img-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+@media (max-width: 930px) {
+  .result__img {
+    width: remy(320);
+    height: remy(360);
+  }
+  .result__img-top {
+    width: 250px;
+  }
+  .result__img-bottom {
+    width: 170px;
+  }
+}
+@media (max-width: 770px) {
+  .result__img {
+    width: remy(272);
+    height: remy(310);
+  }
+  .result__img-top {
+    width: 190px;
+  }
+  .result__img-bottom {
+    width: 146px;
+  }
+}
+@media (max-width: 700px) {
+  .result__img {
+    width: remy(320);
+    height: remy(370);
+  }
+  .result__img-top {
+    width: 250px;
+  }
+  .result__img-bottom {
+    width: 170px;
+  }
+}
+@media (max-width: 450px) {
+  .result__img {
+    width: remy(270);
+    height: remy(300);
+  }
+  .result__img-top {
+    width: 176px;
+  }
+  .result__img-bottom {
+    width: 140px;
+  }
 }
 .result__descrip {
+  padding-top: remy(103);
   flex-grow: 1;
   max-width: remy(540);
 }
+@media (max-width: 930px) {
+  .result__descrip {
+    padding-top: remy(60);
+  }
+}
+@media (max-width: 770px) {
+  .result__descrip {
+    padding-top: remy(120);
+  }
+}
+@media (max-width: 700px) {
+  .result__descrip {
+    margin-top: 30px;
+    padding-top: remy(60);
+    text-align: center;
+  }
+}
 .result__descrip__h2 {
   max-width: remy(414);
+}
+@media (max-width: 370px) {
+  .result__descrip {
+    text-align: left;
+  }
 }
 .result .h4 {
   margin-bottom: remy(11);
@@ -31,6 +123,10 @@
 @media (max-width: 675px) {
   .result__descrip-text {
     line-height: remy(32);
+  }
+}
+@media (max-width: 450px) {
+  .result__descrip-text {
     margin-bottom: remy(52);
   }
 }

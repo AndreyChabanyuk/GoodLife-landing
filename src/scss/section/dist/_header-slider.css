@@ -61,6 +61,7 @@
 .header-content__title .btn {
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
+  width: fit-content;
 }
 
 .header-slider {
