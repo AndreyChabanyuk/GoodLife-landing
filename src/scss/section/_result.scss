@@ -1,0 +1,37 @@
+.result{
+    padding-block:remy(94) remy(122);
+
+    &-content{
+        display:flex;
+        justify-content: space-between;
+        column-gap: remy(30);
+    }
+
+    &__img{
+        flex-shrink: 0;
+    }
+
+    &__descrip{
+        flex-grow:1;
+        max-width:remy(540);
+
+        &__h2{
+           max-width: remy(414);
+        }
+    }
+    .h4{margin-bottom: remy(11);}
+}
+
+.result__descrip-text {
+    font-family: 'Poppins';
+    color: rgb(66, 66, 66);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: remy(37);
+    margin-bottom: remy(24);
+
+    @media (max-width:675px){
+        line-height: remy(32);
+        margin-bottom: remy(52);
+    }
+}

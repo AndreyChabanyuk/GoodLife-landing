@@ -28,6 +28,11 @@
     font-size: 0.8rem;
   }
 }
+@media (max-width: remy(550)) {
+  .btn, .btn-outline {
+    width: 100%;
+  }
+}
 
 .btn:hover {
   background-color: var(--darkAccent);

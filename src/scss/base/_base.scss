@@ -80,3 +80,16 @@ button,a{
 }
 
 
+.container{
+	width:100%;;
+	max-width:remy(1260);
+	margin:0 auto;
+	padding-inline: remy(50);
+	@media (max-width:remy(1199)){
+		padding-inline: remy(30);
+	}
+	@media (max-width:remy(767)){
+		padding-inline: remy(16);
+	}
+	
+}

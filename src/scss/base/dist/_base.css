@@ -69,3 +69,20 @@ button, a {
 .lock {
   overflow: hidden;
 }
+
+.container {
+  width: 100%;
+  max-width: calc(($pxsize)/16)rem;
+  margin: 0 auto;
+  padding-inline: calc(($pxsize)/16)rem;
+}
+@media (max-width: calc(($pxsize)/16)rem) {
+  .container {
+    padding-inline: calc(($pxsize)/16)rem;
+  }
+}
+@media (max-width: calc(($pxsize)/16)rem) {
+  .container {
+    padding-inline: calc(($pxsize)/16)rem;
+  }
+}

@@ -24,6 +24,12 @@
 		line-height: remy(45);
 		min-width: remy(180);
 		font-size: 0.8rem;
+		
+	}
+
+	@media (max-width:remy(550)){
+		width:100%;
+		
 	}
 }
 

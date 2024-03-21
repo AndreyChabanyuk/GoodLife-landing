@@ -1,0 +1,36 @@
+.result {
+  padding-block: remy(94) remy(122);
+}
+.result-content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: remy(30);
+}
+.result__img {
+  flex-shrink: 0;
+}
+.result__descrip {
+  flex-grow: 1;
+  max-width: remy(540);
+}
+.result__descrip__h2 {
+  max-width: remy(414);
+}
+.result .h4 {
+  margin-bottom: remy(11);
+}
+
+.result__descrip-text {
+  font-family: "Poppins";
+  color: #424242;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: remy(37);
+  margin-bottom: remy(24);
+}
+@media (max-width: 675px) {
+  .result__descrip-text {
+    line-height: remy(32);
+    margin-bottom: remy(52);
+  }
+}
