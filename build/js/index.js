@@ -50,3 +50,25 @@ let headerSwiper = new Swiper('.header-slider', {
 		clickable: true,
 	},
 })
+
+
+
+let ctaSwiper = new Swiper('.cta-slider', {
+	loop: true,
+	grabCursor: true,
+	effect: 'creative',
+	creativeEffect: {
+		prev: {
+			shadow: true,
+			translate: ['-20%', 0, -1],
+		},
+		next: {
+			translate: ['100%', 0, 0],
+		},
+	},
+	speed: 1000,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+})

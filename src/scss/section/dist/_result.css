@@ -1,6 +1,11 @@
 .result {
   padding-block: remy(94) remy(122);
 }
+@media (max-width: 450px) {
+  .result {
+    padding-block: remy(54) remy(40);
+  }
+}
 .result-content {
   display: flex;
   justify-content: space-between;
@@ -95,13 +100,18 @@
 }
 @media (max-width: 700px) {
   .result__descrip {
-    margin-top: 30px;
+    margin-top: remy(30);
     padding-top: remy(60);
     text-align: center;
   }
 }
 .result__descrip__h2 {
   max-width: remy(414);
+}
+@media (max-width: 450px) {
+  .result__descrip {
+    margin-top: 0;
+  }
 }
 @media (max-width: 370px) {
   .result__descrip {

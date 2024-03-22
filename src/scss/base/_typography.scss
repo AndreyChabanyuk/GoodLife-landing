@@ -1,46 +1,58 @@
-.h1, .h2, .h3, .h4{
-    font-size: remy(65);
-    line-height: 1.1;
-    font-weight: 800;
+.h1,
+.h2,
+.h3,
+.h4 {
+	font-size: remy(65);
+	line-height: 1.1;
+	font-weight: 800;
 }
 
-.h2{
-    font-size: remy(60);
+.h2 {
+	font-size: remy(60);
 }
 
-.h3,.h5{
-    font-size: remy(48);
-    font-weight: 600;
+.h3,
+.h5 {
+	font-size: remy(48);
+	font-weight: 600;
 }
-.h4{
-    font-size: remy(30);line-height: 1.5;
+.h4 {
+	font-size: remy(40);
+	line-height: 1.5;
 }
-
-.h5{
-    font-size: remy(38);
+.subtitle {
+	color: rgb(255, 255, 255);
+	font-family: 'Open Sans';
+	font-size: remy(17);
+	font-weight: 600;
+	line-height: 1.35;
+    margin:0 auto;
+    padding-block: 15px;
+    opacity:0.8
 }
-
-
-@media (max-width:remy(1000)){
-    .h1{
-        font-size: remy(45);
-    }
-}
-
-
-@media (max-width:remy(675)){
-    .h1{
-        font-size: remy(32);
-    }
-    .h4{
-        line-height: 1.2;
-    }
+.h5 {
+	font-size: remy(38);
 }
 
-.txt-accent{
-    color:var(--ac) !important
+@media (max-width: remy(1000)) {
+	.h1 {
+		font-size: remy(45);
+	}
+}
+
+@media (max-width: remy(675)) {
+	.h1 {
+		font-size: remy(32);
+	}
+	.h4 {
+		line-height: 1.2;
+	}
+}
+
+.txt-accent {
+	color: var(--ac) !important;
 }
 
 .accent-span {
-    color:var(--subAc)!important
+	color: var(--subAc) !important;
 }

@@ -1,0 +1,48 @@
+.cta{
+    .h2{
+        text-shadow:0 0 60px rgba(0, 0, 0, 0.46);
+        line-height: 1.5;
+        @media (max-width:770px){
+            font-size: remy(42);
+        }
+        
+    }
+    .subtitle{
+        text-shadow:0 0 20px rgba(0, 0, 0, 0.5);
+        max-width: remy(418);
+       @media(max-width:450px){
+               margin-bottom: remy(10);
+            }
+
+    }
+    .slider-content__title{
+        width:100%;
+        padding:0 1rem 0;
+        
+        & .btn{
+            margin-bottom: remy(30);
+            @media(max-width:450px){
+                width:100%
+            }
+        }
+    
+    }
+
+    .swiper__item{
+        height: remy(700);
+        
+        @media(min-width:1300px){
+            height: remy(1200);
+        }
+
+        @media(max-width:1015px){
+            height: remy(800);
+        }
+
+         @media(max-width:800px){
+            height: remy(500);
+        }
+
+        
+    }
+}

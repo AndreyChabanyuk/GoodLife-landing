@@ -1,4 +1,7 @@
-.h1, .h2, .h3, .h4 {
+.h1,
+.h2,
+.h3,
+.h4 {
   font-size: remy(65);
   line-height: 1.1;
   font-weight: 800;
@@ -8,14 +11,26 @@
   font-size: remy(60);
 }
 
-.h3, .h5 {
+.h3,
+.h5 {
   font-size: remy(48);
   font-weight: 600;
 }
 
 .h4 {
-  font-size: remy(30);
+  font-size: remy(40);
   line-height: 1.5;
+}
+
+.subtitle {
+  color: white;
+  font-family: "Open Sans";
+  font-size: remy(17);
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 auto;
+  padding-block: 15px;
+  opacity: 0.8;
 }
 
 .h5 {

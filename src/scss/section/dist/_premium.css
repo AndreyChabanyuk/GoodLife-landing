@@ -1,0 +1,35 @@
+.premium {
+  padding-block: remy(224) remy(129);
+}
+.premium-content {
+  display: flex;
+  align-items: center;
+  column-gap: remy(145);
+}
+.premium__descrip {
+  flex-shrink: 0;
+  flex-grow: 1;
+  max-width: remy(489);
+  padding-right: remy(20);
+}
+.premium__descrip .h4 {
+  padding-bottom: remy(4);
+}
+.premium__descrip-text {
+  font-size: 1rem;
+  margin-bottom: remy(22);
+  line-height: remy(37);
+}
+.premium__img {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.premium__img-top {
+  position: relative;
+  z-index: 2;
+}
+.premium__img-bottom {
+  padding-left: remy(150);
+  margin-top: remy(-140);
+}
