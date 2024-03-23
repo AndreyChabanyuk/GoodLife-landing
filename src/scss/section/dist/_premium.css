@@ -1,19 +1,61 @@
 .premium {
   padding-block: remy(224) remy(129);
 }
+@media (max-width: 980px) {
+  .premium {
+    padding-block: remy(140) remy(100);
+  }
+}
+@media (max-width: 770px) {
+  .premium {
+    padding-block: remy(120) remy(80);
+  }
+}
+@media (max-width: 450px) {
+  .premium {
+    padding-block: remy(70) remy(80);
+  }
+}
 .premium-content {
   display: flex;
   align-items: center;
   column-gap: remy(145);
+  justify-content: center;
+}
+@media (max-width: 770px) {
+  .premium-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+@media (max-width: 1240px) {
+  .premium-content {
+    column-gap: remy(50);
+  }
+}
+@media (max-width: 370px) {
+  .premium-content {
+    text-align: left;
+  }
 }
 .premium__descrip {
-  flex-shrink: 0;
   flex-grow: 1;
   max-width: remy(489);
   padding-right: remy(20);
 }
+@media (max-width: 1240px) {
+  .premium__descrip {
+    flex-shrink: 1;
+  }
+}
 .premium__descrip .h4 {
   padding-bottom: remy(4);
+}
+@media (max-width: 770px) {
+  .premium__descrip {
+    margin-top: remy(62);
+    padding-right: 0;
+  }
 }
 .premium__descrip-text {
   font-size: 1rem;
@@ -25,6 +67,29 @@
   flex-direction: column;
   flex-shrink: 0;
 }
+.premium__img img {
+  aspect-ratio: 3/2;
+}
+@media (max-width: 1140px) {
+  .premium__img img {
+    width: remy(330);
+  }
+}
+@media (max-width: 980px) {
+  .premium__img img {
+    width: remy(250);
+  }
+}
+@media (max-width: 770px) {
+  .premium__img img {
+    width: remy(320);
+  }
+}
+@media (max-width: 450px) {
+  .premium__img img {
+    width: remy(200);
+  }
+}
 .premium__img-top {
   position: relative;
   z-index: 2;
@@ -32,4 +97,22 @@
 .premium__img-bottom {
   padding-left: remy(150);
   margin-top: remy(-140);
+}
+@media (max-width: 1140px) {
+  .premium__img-bottom {
+    margin-top: remy(-110);
+    padding-left: remy(100);
+  }
+}
+@media (max-width: 980px) {
+  .premium__img-bottom {
+    padding-left: remy(60);
+    margin-top: remy(-100);
+  }
+}
+@media (max-width: 450px) {
+  .premium__img-bottom {
+    padding-left: remy(70);
+    margin-top: remy(-65);
+  }
 }

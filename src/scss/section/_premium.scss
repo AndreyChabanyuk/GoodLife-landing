@@ -1,21 +1,55 @@
 .premium{
     padding-block:remy(224) remy(129);
 
+    @media (max-width:980px){
+        padding-block: remy(140) remy(100);
+    }
+
+    @media(max-width:770px){
+            padding-block: remy(120) remy(80);
+        }
+
+        @media(max-width:450px){
+            padding-block: remy(70) remy(80);
+        }
     &-content{
         display: flex;
         align-items: center;
         column-gap: remy(145);
+        justify-content: center;
+        @media(max-width:770px){
+            flex-direction: column-reverse;
+            text-align: center;
+        }
 
+        @media(max-width:1240px){
+            column-gap: remy(50);
+        }
+
+        @media(max-width:370px){
+            text-align: left;
+        }
+        
     }
 
     &__descrip{
-        flex-shrink: 0;
+        
+     
         flex-grow: 1;
         max-width: remy(489);
         padding-right: remy(20);
+
+        @media(max-width:1240px){
+            flex-shrink: 1;
+        }
         .h4{
             padding-bottom: remy(4);
     
+        }
+
+        @media(max-width:770px){
+            margin-top: remy(62);
+            padding-right:0;
         }
         &-text{
             font-size: 1rem;
@@ -28,14 +62,55 @@
         display: flex;
         flex-direction: column;
         flex-shrink: 0;
+        
+        
+        
+        img{
+            aspect-ratio: 3 / 2;
+            
+            @media (max-width:1140px){
+                width:remy(330)
+            }
+
+            @media (max-width:980px){
+                width:remy(250)
+            }
+
+            @media(max-width:770px){
+                width:remy(320)
+            }
+
+            @media(max-width:450px){
+                width:remy(200)
+            }
+            
+        
+        }
         &-top{
             position: relative;
             z-index: 2;
+            
         }
         &-bottom{
             padding-left: remy(150);
             margin-top: remy(-140);
             
+       
+            @media (max-width:1140px){
+                margin-top:remy(-110);
+                padding-left: remy(100);
+            }
+        
+            @media(max-width:980px){
+                padding-left: remy(60);
+                margin-top:remy(-100)
+            }
+
+            @media(max-width:450px){
+                padding-left: remy(70);
+                margin-top:remy(-65)
+            }
+       
         }
 
 
