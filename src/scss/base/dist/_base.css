@@ -13,6 +13,7 @@ body {
   --ac:#E43071;
   --subAc:#FFC1D8;
   --outBr:#FFDAE7;
+  --decorColor:#F8C5D7;
   --darkAccent:rgb(190, 40, 94);
   color: var(--text-color);
   font-family: var(--font-main);
@@ -25,6 +26,7 @@ body.green-theme {
   --subAc:#9BE8C7;
   --outBr:#a5e4c9;
   --darkAccent:#0b7949;
+  --decorColor:#78bc9f;
 }
 
 img {

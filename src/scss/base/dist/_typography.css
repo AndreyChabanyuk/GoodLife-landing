@@ -51,6 +51,11 @@
     line-height: 1.2;
   }
 }
+@media (max-width: remy(500)) {
+  .h3 {
+    font-size: remy(26);
+  }
+}
 .txt-accent {
   color: var(--ac) !important;
 }
