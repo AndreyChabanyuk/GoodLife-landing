@@ -1,0 +1,21 @@
+.app {
+  background-color: black;
+}
+.app-container {
+  max-width: remy(930);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 991px) {
+  .app {
+    padding-left: remy(16);
+    padding-right: remy(16);
+  }
+}
+@media (max-width: 770px) {
+  .app {
+    padding-left: remy(28);
+    padding-right: remy(28);
+  }
+}

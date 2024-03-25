@@ -11,9 +11,9 @@
     padding-block: remy(120) remy(80);
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .premium {
-    padding-block: remy(70) remy(80);
+    padding-block: remy(70) remy(60);
   }
 }
 .premium-content {
