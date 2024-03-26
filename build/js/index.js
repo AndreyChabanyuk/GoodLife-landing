@@ -72,3 +72,25 @@ let ctaSwiper = new Swiper('.cta-slider', {
 		clickable: true,
 	},
 })
+
+
+
+
+const infoBtns= document.querySelectorAll('.btn-footer')
+
+
+	for (let btn of infoBtns) {
+		btn.addEventListener('click',function(){
+			this.classList.toggle('rotate')
+			this.parentNode.parentNode.querySelector('ul').classList.toggle('visible')
+			this.parentNode.parentNode.querySelector('ul').classList.toggle('flex')
+		})
+	}
+
+
+
+
+
+
+
+
